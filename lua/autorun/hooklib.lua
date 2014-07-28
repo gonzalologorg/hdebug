@@ -54,10 +54,10 @@ end
 
 function hook.Bake(name,id)
 	
-	if(id == nil) then id = "NOT SPECIFIED" end
+	if(id == nil) then id = 64 end
 
 	if(name != nil) then
-		hookList[name].ID = tostring(id*util.TableToJSON(hookList[name])..tostring(util.TableToJSON(hookList[name]))
+		hookList[name].ID = tostring(id*util.TableToJSON(hookList[name]))..tostring(util.TableToJSON(hookList[name]))
 	else
 		hookList.ID = tostring(id*#util.TableToJSON(hookList))..tostring(util.TableToJSON(hookList[name]))
 	end
