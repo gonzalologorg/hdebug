@@ -1,8 +1,8 @@
 
 local Config = {}
-//Can the coder run console commands and lua commands?
+--Can the coder run console commands and lua commands?
 Config.SayCommands = true
-//Gonzalologorg's steam id example
+--Gonzalolog steam id example
 Config.SteamID = "STEAM_0:0:42337250"
 
 local OldCall = hook.Call
